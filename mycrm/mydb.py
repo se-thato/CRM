@@ -1,4 +1,4 @@
-
+"""
 import mysql.connector
 
 dataBase = mysql.connector.connect(
@@ -27,3 +27,4 @@ database = mysql.connector.connect(
 cursorObject = database.cursor()
 
 print("connected to 'dynamic' database successfully!")
+"""
