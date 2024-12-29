@@ -1,30 +1,16 @@
-"""
 import mysql.connector
 
 dataBase = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    passwd = '@THATO53',
+    passwd = 'theplanetisflat',
 )
 
 #prepare cursor object
 cursorObject = dataBase.cursor()
 
 #create the database
-cursorObject.execute("CREATE DATABASE dynamic")
+cursorObject.execute("CREATE DATABASE mycrm")
 
 print("Done! database created successfully")
 
-
-database = mysql.connector.connect(
-    host = "localhost",
-    user = "root", 
-    passwd = "@THATO53",
-    database = "dynamic"
-
-)
-
-cursorObject = database.cursor()
-
-print("connected to 'dynamic' database successfully!")
-"""
